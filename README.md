@@ -11,9 +11,9 @@
 <p align="center"><img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/icon.svg" alt="PC Card" width="120"></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/system-bridge.png" alt="System Bridge" height="36">&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/hass-agent.png" alt="HASS.Agent" height="36">&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/lnxlink.png" alt="LNXlink" height="36">
+  <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/system-bridge.png" alt="System Bridge" height="24">&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/hass-agent.png" alt="HASS.Agent" height="24">&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/lnxlink.png" alt="LNXlink" height="24">
 </p>
 
 A Lovelace card for **PCs and Macs**: their state, CPU, GPU, RAM and disks, the signed-in user, and buttons to wake, lock, sleep or shut them down (with a confirmation).
@@ -47,9 +47,9 @@ The card reads the sensors and controls of these integrations:
 
 | | Integration | What the cards show |
 |:---:|---|---|
-| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/system-bridge.png" alt="System Bridge" height="24"> | [System Bridge](https://www.home-assistant.io/integrations/system_bridge/) (built in) | Windows and Linux: CPU, GPU, memory, disks, power actions |
-| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/hass-agent.png" alt="HASS.Agent" height="24"> | [HASS.Agent](https://github.com/hass-agent/HASS.Agent-Integration) (Marketplace) | Windows: sensors, commands and notifications |
-| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/lnxlink.png" alt="LNXlink" height="24"> | [LNXlink](https://github.com/bkbilly/lnxlink) (MQTT) | Linux: sensors and controls through MQTT discovery |
+| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/system-bridge.png" alt="System Bridge" height="16"> | [System Bridge](https://www.home-assistant.io/integrations/system_bridge/) (built in) | Windows and Linux: CPU, GPU, memory, disks, power actions |
+| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/hass-agent.png" alt="HASS.Agent" height="16"> | [HASS.Agent](https://github.com/hass-agent/HASS.Agent-Integration) (Marketplace) | Windows: sensors, commands and notifications |
+| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/lnxlink.png" alt="LNXlink" height="16"> | [LNXlink](https://github.com/bkbilly/lnxlink) (MQTT) | Linux: sensors and controls through MQTT discovery |
 |  | [Mobile App (macOS)](https://www.home-assistant.io/integrations/mobile_app/) (built in) | The Home Assistant macOS app's sensors |
 |  | [Wake on LAN](https://www.home-assistant.io/integrations/wake_on_lan/) (built in) | Turn the computer on |
 
