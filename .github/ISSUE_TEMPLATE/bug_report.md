@@ -24,7 +24,7 @@ If applicable, add screenshots to help explain your problem.
 **Environment:**
 - Home Assistant version:
 - Browser:
-- HACS version:
+- Marketplace version:
 - Card version:
 - Card (pc-card or pc-mini-card):
 - Integration (System Bridge, HASS.Agent, LNXlink, Mobile App…) and operating system:
