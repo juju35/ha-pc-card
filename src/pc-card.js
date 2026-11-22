@@ -564,6 +564,7 @@ class PcCard extends RcCard {
     .banner .rs { display: flex; flex-wrap: wrap; gap: 4px; height: 20px; margin: 3px 0 0 -2px; min-width: 0; overflow: hidden; }
     .banner .r { flex: none; line-height: 20px; padding: 0 7px; color: var(--bt); background: rgba(255,255,255,.62); }
     .banner.night .r { background: rgba(10,20,40,.4); }
+    .banner span.r { cursor: default; }
     .banner .ringb { position: absolute; inset: 0; }
     /* Home Assistant's dark theme: a darker track behind the bars. */
     ha-card.dk { --pc-track: rgba(255,255,255,.1); }
@@ -610,7 +611,8 @@ class PcMiniCard extends rcMini(
     const night = this._night();
     if (!this._changed(["mini", m.state, m.name, m.cpu == null ? null : Math.round(m.cpu), m.ram == null ? null : Math.round(m.ram), m.since, night, this._dark()])) return;
     const status = this._t(`st_${m.state === "none" ? "offline" : m.state}`);
-    const chip = (text, id) => `<button class="r"${id ? ` data-id="${rcEsc(id)}"` : ""} title="${rcEsc(text)}"><span>${rcEsc(text)}</span></button>`;
+    // A chip opens its sensor; one without a sensor is text alone, never a button that does nothing.
+    const chip = (text, id) => (id ? `<button class="r" data-id="${rcEsc(id)}" title="${rcEsc(text)}"><span>${rcEsc(text)}</span></button>` : `<span class="r" title="${rcEsc(text)}"><span>${rcEsc(text)}</span></span>`);
     const chips = m.none
       ? chip(this._t("no_pc"))
       : m.awake
