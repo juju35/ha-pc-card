@@ -1,0 +1,27 @@
+{
+  "name": "ha-pc-card",
+  "version": "1.0.0",
+  "description": "A Lovelace card for Home Assistant PCs and Macs: state, CPU, GPU, RAM and disks with their last 24 hours, the signed-in user, and wake, lock, sleep and shut down with a confirmation.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juju35/ha-pc-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juju35/ha-pc-card/issues"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs && node --check dist/ha-pc-card.js",
+    "test": "node --test test/*.test.mjs",
+    "screenshots": "npm run build && node scripts/screenshots/pc.mjs && node scripts/screenshots/animations.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@mdi/js": "^7.4.47",
+    "acorn": "^8.19.0",
+    "css-tree": "^3.2.1",
+    "playwright": "^1.64.1"
+  }
+}
