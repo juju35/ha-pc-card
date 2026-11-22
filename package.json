@@ -1,6 +1,6 @@
 {
   "name": "ha-pc-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Lovelace card for Home Assistant PCs and Macs: state, CPU, GPU, RAM and disks with their last 24 hours, the signed-in user, and wake, lock, sleep and shut down with a confirmation.",
   "repository": {
     "type": "git",
