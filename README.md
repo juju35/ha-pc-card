@@ -50,8 +50,8 @@ The card reads the sensors and controls of these integrations:
 | <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/system-bridge.png" alt="System Bridge" height="16"> | [System Bridge](https://www.home-assistant.io/integrations/system_bridge/) (built in) | Windows and Linux: CPU, GPU, memory, disks, power actions |
 | <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/hass-agent.png" alt="HASS.Agent" height="16"> | [HASS.Agent](https://github.com/hass-agent/HASS.Agent-Integration) (Marketplace) | Windows: sensors, commands and notifications |
 | <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/lnxlink.png" alt="LNXlink" height="16"> | [LNXlink](https://github.com/bkbilly/lnxlink) (MQTT) | Linux: sensors and controls through MQTT discovery |
-|  | [Mobile App (macOS)](https://www.home-assistant.io/integrations/mobile_app/) (built in) | The Home Assistant macOS app's sensors |
-|  | [Wake on LAN](https://www.home-assistant.io/integrations/wake_on_lan/) (built in) | Turn the computer on |
+| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/home_assistant.png" alt="" height="16"> | [Mobile App (macOS)](https://www.home-assistant.io/integrations/mobile_app/) (built in) | The Home Assistant macOS app's sensors |
+| <img src="https://raw.githubusercontent.com/juju35/ha-pc-card/main/images/home_assistant.png" alt="" height="16"> | [Wake on LAN](https://www.home-assistant.io/integrations/wake_on_lan/) (built in) | Turn the computer on |
 
 ## Installation
 
