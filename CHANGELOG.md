@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.4 - 2026-11-25
+
+### Fixes
+- A session state of `Unlocked` (HASS.Agent `SessionState`) no longer shows the computer as locked: the card matched `lock` inside `unlocked`. Fixes #9.
+
 ## 1.0.3 - 2026-11-24
 
 ### Maintenance

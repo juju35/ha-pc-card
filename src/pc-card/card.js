@@ -113,7 +113,7 @@ export class PcCard extends RcCard {
     if (!e.device && !e.cpu) state = "none";
     else if (/sleep|suspend|standby|hibernat/.test(stateText)) state = "sleep";
     else if (/off|shut|powered_down/.test(stateText) || (ok(online) && online.state === "off")) state = "off";
-    else if ((ok(online) && online.state === "on") || ok(st("cpu")) || ok(st("ram"))) state = /lock/.test(stateText) ? "locked" : "on";
+    else if ((ok(online) && online.state === "on") || ok(st("cpu")) || ok(st("ram"))) state = /lock/.test(stateText) && !/unlock/.test(stateText) ? "locked" : "on";
     else state = "off";
     const awake = state === "on" || state === "locked";
     const changed = [online, st("cpu"), st("state")].filter(Boolean).map((s) => new Date(s.last_changed).getTime());
