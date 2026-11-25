@@ -111,6 +111,13 @@ test("asleep and off: the wake button, since when, no loads", async () => {
   assert.match(locked.shadowRoot.innerHTML, /<span class="ws">locked · up/);
 });
 
+test("HASS.Agent session state: Unlocked is on, not locked", async () => {
+  const { hass } = makeHass("on");
+  const id = Object.keys(hass.states).find((k) => k.endsWith("_session_state"));
+  const unlocked = await make("pc-card", "on", {}, { states: { ...hass.states, [id]: { ...hass.states[id], state: "Unlocked" } } });
+  assert.equal(unlocked._items.state, "on");
+});
+
 test("actions: lock at once; shut down after the confirmation; wake on LAN without a wake button", async () => {
   const card = await make("pc-card", "on");
   const h = card._hass;
